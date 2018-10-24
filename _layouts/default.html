@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  
+  {% include head.html %}
+  <body>
+
+    <div class="page-wrapper container-fluid">
+      <div class="row">
+        <div class="page-content col col-lg-7">
+          {{ content }}
+        </div>
+        <div class="page-sidebar col col-lg-5">
+          <div class="page-header">
+            {% include header.html %}
+          </div>
+          <div class="page-sidebar">
+            {% include sidebar.html images=page.img %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include js.html %}
+
+  </body>
+</html>

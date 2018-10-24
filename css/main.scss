@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@font-face {
+    font-family: 'fivo_sans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../assets/fonts/fivosans-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/fivosans-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'fivo_sans';
+    font-weight: 100;
+    font-style: normal;
+    src: url('../assets/fonts/fivosans-thin-webfont.woff2') format('woff2'),
+         url('../assets/fonts/fivosans-thin-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'fivo_sans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../assets/fonts/fivosans-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/fivosans-bold-webfont.woff') format('woff');
+}
+
+// variables
+$base-font-family: 'fivo_sans', sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$body-color:       #fdfdfd;
+$head-color:       #E9D692;
+$content-color:    #fdfdfd;
+$background-color: #000000;
+
+$brand-color:        #EA1B63;
+$brand-color-hover:  #EA1B63;
+$brand-color-active: #EA1B63;
+
+$sidebar-color:      #ececec;
+$grey-color:         #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "sidebar",
+        "post"
+;

@@ -1,0 +1,31 @@
+<div class="sidebar-content">
+
+  <!-- {% if include.images %}
+  <div class="sidebar-image">
+    <img class="caption__media"
+         src="{{site.baseurl}}/images/{{include.images.600w}}">
+  </div>
+  {% endif %} -->
+
+  Wir freuen uns auf Ihre Ideen.<br>
+  Schreiben oder rufen Sie an.
+
+  <div class="spacing-half"></div>
+  Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
+  Telefon: {{ site.tel }}<br/>
+  
+  <!-- <div class="spacing-half"></div>
+  Addresse:
+  <p>
+    {{ site.title }}
+    <br>
+    {% for line in site.address.first.lines %}
+    {{ line }} <br>
+    {% endfor %}
+  </p> -->
+  
+  <div class="spacing"></div>
+  <!-- <div class="hline"></div> -->
+  <a href="{{"/impressum/" | prepend: site.baseurl }}">Impressum</a>
+
+</div>

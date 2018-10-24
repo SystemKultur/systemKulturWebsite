@@ -1,0 +1,38 @@
+.post {
+  padding: 50px;
+  
+  h2 {
+    font-weight: 100;
+    font-size: 21px;
+    line-height: 28px;
+  }
+  h3 {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+}
+/**
+ * Page-Header
+ */
+.page-header {
+  margin-bottom: $spacing-unit;
+  position: relative;
+  min-height: 150px;
+
+  .page-title {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1;
+    color: $text-color;
+    padding-top: 50px;
+
+    @include media-query($on-laptop) {
+      font-size: 36px;
+    }
+  }
+  .background-image {}
+}
+
+img[alt=team] {
+  width: 100%;
+}

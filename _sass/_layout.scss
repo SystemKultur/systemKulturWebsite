@@ -1,0 +1,20 @@
+.page-wrapper {
+  background: #FFF;
+  display: block;
+  margin-right: 0;
+}
+.page-content {
+  margin: 230px 0 0 0;
+  padding: 50px 0;
+}
+.page-sidebar {
+  background: $sidebar-color;
+  p {
+    margin: 10px 0 12px 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111;
+  }
+}
+
+

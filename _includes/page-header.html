@@ -1,0 +1,14 @@
+<header class="page-header">
+
+  {% if include.title %}
+    <h1 class="page-title">{{ include.title }}</h1>
+  {% endif %}
+
+  {% if include.images %}
+    <div class="background-image">
+      <img class="caption__media"
+            srcset="{% for img in include.images %} {{site.baseurl}}/images/{{img[1]}} {{img[0]}} {% unless forloop.last %}, {% endunless %} {% endfor %}">
+    </div>
+  {% endif %}
+
+</header>

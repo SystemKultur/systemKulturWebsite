@@ -1,0 +1,30 @@
+# Site settings
+title: Systemkultur
+email: info@systemkultur.de
+tel: +49 176 8793 1171
+address:
+  - lines:
+    - Tobias Heinzmann
+    - Mariannestraße 81
+    - 04315 Leipzig
+    - Germany
+description: > # this means to ignore newlines until "baseurl:"
+  Systemkultur ist Jonas, Friedhelm, Hagen, Hans und Tobias.
+  Wir sind ein eingespieltes Team von Softwareentwicklern und haben langjährige Erfahrung mit agilen Methoden.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://systemkultur.de" # the base hostname & protocol for your site
+twitter_username: systemkultur
+github_username:  systemkultur
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+
+# FTP
+ftp_host: 'systemkultur.de'
+ftp_dir: '/htdocs'
+ftp_passive: true
+ftp_port: 21                  # default 21
+ftp_username: 'jonas'         # default read from stdin
+ftp_password: 'jonas'         # default read from stdin
+ftp_secure: false             # default false
